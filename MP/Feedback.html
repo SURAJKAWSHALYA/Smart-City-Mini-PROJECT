@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="1.png" alt="Logo">
+        </a>
+        <!--Menu-->
+        <i class='bxr bx-menu-close' id="menu"></i> 
+        <!--Links-->
+        <ul class="navbar"> 
+            <li><a href="Sample.html">Home</a></li>
+            <li><a href="Lcal Issues.html">Local Issues</a></li>
+            <li><a href="Solutions.html">Solutions</a></li>
+            <li><a href="Community Events.html">Community Events</a></li>
+            <li><a href="Feedback.html" class="active">Feedbacks</a></li>
+        </ul>
+        <!--Icons-->
+        <div class="header-icon">
+            <i class='bxr bx-search' id="search-icon"></i> 
+        </div>
+    </header>
+
+    <section class="feedback" id="feedback">
+        <div class="feedback-text">
+            <br><br>
+            <h1><u>Share Your Feedback</u></h1><br>
+            <p>We value your feedback! Please fill out the form below to help us improve our community services and address local issues more effectively.</p>
+            
+            <form action="#" method="post" class="feedback-form">
+                <label for="name"><b>Name</b></label><br>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+                <label for="email"><b>Email</b></label><br>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+                <label for="issue-type"><b>Type of Feedback</b></label><br>
+                <select id="issue-type" name="issue-type" required>
+                    <option value="">Select Type</option>
+                    <option value="garbage">Garbage Issue</option>
+                    <option value="health">Health Issue</option>
+                    <option value="education">Education Issue</option>
+                    <option value="infrastructure">Infrastructure Issue</option>
+                    <option value="general">General Feedback</option>
+                </select><br><br>
+
+                <label for="message"><b>Message</b></label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Write your feedback here..." required></textarea><br><br>
+
+                <button type="submit" class="btn-submit">Submit Feedback</button>
+            </form>
+        </div>
+
+        <div class="feedback-img">
+            <img src="feedback.png" alt="Feedback" class="rounded-image">
+        </div>
+    </section>
+
+</body>
+</html>
